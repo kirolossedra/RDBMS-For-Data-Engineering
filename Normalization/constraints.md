@@ -1,0 +1,7 @@
+
+
+Entity Integrity Constraint: Entity integrity ensures that no duplicate records exist within a table and that the column identifing each record within the table is not a duplicate and not null. The existence of a primary key in both the BookShop and BookShop_AuthorDetails tables satisfies this integrity constraint because a primary key mandates NOT NULL constraint as well as ensuring that every row in the table has a value that uniquely denotes the row.
+
+Referential Integrity Constraint: Referential integrity ensures the existence of a referenced value if a value of one column of a table references a value of another column. The existence of the foreign Key (AUTHOR_ID) in the BookShop table satisfies this integrity constraint because a cross-reference relationship between the BookShop and BookShop_AuthorDetails tables exists. As a result of this relationship, each book in the BookShop table is linked to the relevant row in the BookShop_AuthorDetails table through the AUTHOR_ID columns.
+
+Domain Integrity Constraint: Domain integrity ensures clarity of column purpose and consistency of valid values. The BookShop table adheres to this constraint through the specification of data types, length, date format, check constraints, and null constraints in its CREATE statement. This comprehensive approach guarantees that the values in each column are not only valid but also conform to the specified domain constraints.
